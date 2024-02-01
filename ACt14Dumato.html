@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="reset stylesheet.css">
+    <link rel="icon" type="image/x-icon" href="">
+    <title>Using Emojis in HTML</title>
+</head>
+<body>
+    <div class="upper-navigation">
+        <div class="icon">
+            <img src="user.png" alt="Unknown person">
+        </div>
+        <div class="navigation">
+            <ul class="nav-options">
+                <li class="options"><a href="#">People</a>
+                    <ul class="dropdown">
+                        <ion-icon name="caret-up-outline"></ion-icon>
+                        <li><a href="DarkPeople.html">Dark</a></li>
+                        <li><a href="MediumDArkPeople.html">Medium dark</a></li>
+                        <li><a href="MEdiumPeople.html">Medium</a></li>
+                        <li><a href="MediumLightPeople.html">Medium light</a></li>
+                        <li><a href="LightPeople.html">Light</a></li>
+                    </ul>
+                </li>
+                <li class="options"><a href="#">Hands</a>
+                    <ul class="dropdown">
+                        <ion-icon name="caret-up-outline"></ion-icon>
+                        <li><a href="DarkH.html">Dark</a></li>
+                        <li><a href="MediumDarkH.html">Medium dark</a></li>
+                        <li><a href="MediumH.html">Medium</a></li>
+                        <li><a href="MediumLightH.html">Medium light</a></li>
+                        <li><a href="LightH.html">Light</a></li>
+                    </ul>
+                </li>
+                <li class="options"><a href="#">Other</a>
+                    <ul class="dropdown">
+                        <ion-icon name="caret-up-outline"></ion-icon>
+                        <li><a href="Weather.html">Weather</a></li>
+                        <li><a href="Vehicles.html">Vehicles</a></li>
+                        <li><a href="Symbols.html">Symbols</a></li>
+                        <li><a href="Emojis.html">Popular</a></li>
+                    </ul>
+                </li>
+                <li class="options"><a href="ACt14Dumato.html">Homepage</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="main">
+        <div class="main-container">
+            <span>
+            <h1>Using Emojis in HTML</h1>
+            <br>
+            <h2>What are Emojis?</h2>
+            <br>
+            <p>Emojis look like images, or icons, but they are not.<br>
+            They are letters (characters) from the UTF-8 (Unicode) character set.
+            </p>
+            <br>
+            <br>
+            <p id="note">
+                UTF-8 covers almost all of the characters and symbols in the world.
+            </p>
+            <br><br>
+            <hr>
+            <br><br>
+            <h2>The HTML charset Attribute</h2>
+            <br>
+            <p>To display an HTML page correctly, a web browser must know the character set used in the page.</p>
+            <br>
+            <p>This is specified in the <span style="color: red;"><span style="color: red;"><</span>meta<span style="color: red;">></span></span> tag:</p>
+            <p id="code" style="color: red;"><span style="color: lightblue;"><</span><span style="color: brown;">meta&nbsp;</span>charset<span style="color: lightblue;">="UTF-8    "></span></p>
+            <br><br>
+            <p id="note">If not specified, UTF-8 is the default character set in HTML.</p>
+            <br><br><br>
+            <h2>UTF-8 Characters</h2>
+            <br>
+            <p>Many UTF-8 characters cannot be typed on a keyboard, but they can always be displayed using numbers (called entity numbers):</p>
+            <ul>
+                <li>A is 65</li>
+                <li>B is 66</li>
+                <li>C is 67</li>
+            </ul>
+            <p id="code">
+                <span>
+                    <span style="color: brown;"><span style="color: lightblue;"><</span>!DOCTYPE<span style="color: lightblue;"><span style="color: red;">&nbsp;html</span>></span></span><br>
+                    <span style="color: brown;"><span style="color: lightblue;"><</span>html<span style="color: lightblue;">></span></span><br>
+                    <span style="color: brown;"><span style="color: lightblue;"><</span>meta<span style="color: red;">&nbsp;charset</span><span style="color: lightblue;">="UTF-8"></span></span><br>
+                    <span style="color: brown;"><span style="color: lightblue;"><</span>body<span style="color: lightblue;">></span></span><br>
+                    <br>
+                    <span style="color: brown;"><span style="color: lightblue;"><</span>p<span style="color: lightblue;">><code style="color: black;">I will display A, B and C.</code></span></span><span style="color: brown;"><span style="color: lightblue;"><</span>/p<span style="color: lightblue;">></span></span><br>
+                    <span style="color: brown;"><span style="color: lightblue;"><</span>p<span style="color: lightblue;">><code style="color: black;">I will display #65, #66, and #67.</code></span></span><span style="color: brown;"><span style="color: lightblue;"><</span>/p<span style="color: lightblue;">></span></span><br>
+                    <br>
+                    <span style="color: brown;"><span style="color: lightblue;"><</span>body<span style="color: lightblue;">></span></span><br>
+                    <span style="color: brown;"><span style="color: lightblue;"><</span>html<span style="color: lightblue;">></span></span><br>
+                </span>
+            </p>
+            <br>
+            <h2>Example Explained</h2>
+            <br><br>
+            <p>The <span style="color: brown;background-color: rgb(3, 32, 70);padding: 3px;border-radius: 5px;"><span style="color: lightblue;"><</span>meta<span style="color: red;">&nbsp;charset</span><span style="color: lightblue;">="UTF-8"></span></span> element defines the character set.</p>
+            <br>
+            <p>The characters A, B, and C, are displayed by the numbers 65, 66, and 67.</p>
+            <br>
+            <p>To let the browser understand that you are displaying a character, you must start the entity number with &# and end it with ; (semicolon).</p>
+            <br><br>
+            <h2>Emoji Characters</h2><br>
+            <p>Emojis are also characters from the UTF-8 alphabet:</p>
+            <ul>
+                <li>😄 is 128516</li>
+                <li>😍 is 128525</li>
+                <li>💗 is 128151</li>
+            </ul>
+            <br>
+            <p id="note">Since Emojis are characters, they can be copied, displayed, and sized just like any other character in HTML.</p>
+            <br><br><br>
+            </span>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-contain">
+            <div class="upper-person">
+                <ion-icon name="person-circle"></ion-icon>
+                <p id="up">Free web design</p>
+            </div>
+            <div class="lower-person">
+                <p id="down">Released under MIT License | Copyright @ 2024</p>
+                <ul>
+                    <li><b>Cheatsheet</b></li>
+                    <li><b>Release Notes</b></li>
+                    <li><b>v1</b></li>
+                    <li><b>v2</b></li>
+                    <li><b>v3</b></li>
+                    <li><b>v4</b></li>
+                    <li><b>Framework</b></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</html>
